@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciador de Tarefas</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js"></script>
+</head>
+
+<body>
+  <div class="container text-center">
+    <div class="row">
+      <div class="container text-center col-8" id="form">
+        <div class="row">
+          <h1>Gerenciador de Tarefas</h1>
+        </div>
+        <div class="row ">
+          <p>Escreva sua Tarefa:</p>
+          <div class="row text-center">
+            <input type="text" id="taskDescription">
+          </div>
+        </div>
+        <div class="row">
+          <p>Selecione o dia:</p>
+        </div>
+        <div class="checkboxDias">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="seg">
+            <label class="form-check-label" for="inlineCheckbox1">Seg</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="ter">
+            <label class="form-check-label" for="inlineCheckbox2">Ter</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="qua">
+            <label class="form-check-label" for="inlineCheckbox3">Qua</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="qui">
+            <label class="form-check-label" for="inlineCheckbox4">Qui</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="sex">
+            <label class="form-check-label" for="inlineCheckbox5">Sex</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="sab">
+            <label class="form-check-label" for="inlineCheckbox6">Sáb</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox7" value="dom">
+            <label class="form-check-label" for="inlineCheckbox7">Dom</label>
+          </div>
+        </div>
+        <div class="d-grid col-1 mx-auto">
+          <button class="btn btn-primary" type="button" onclick="add()">Add</button>
+        </div>
+      </div>
+      <div class="container text-center col-8" id="search">
+        <div class="row">col</div>
+        <div class="row">col</div>
+        <div class="row">col</div>
+        <div class="row">col</div>
+      </div>
+      <div class="container col-4">
+        <div class="d-flex align-items-start">
+          <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <button class="nav-link" id="v-pills-seg-tab" data-bs-toggle="pill" data-bs-target="#v-pills-seg" type="button" role="tab" aria-controls="v-pills-seg" aria-selected="true" onclick="showFilter('seg')">Segunda</button>
+            <button class="nav-link" id="v-pills-ter-tab" data-bs-toggle="pill" data-bs-target="#v-pills-ter" type="button" role="tab" aria-controls="v-pills-ter" aria-selected="true">Terça</button>
+            <button class="nav-link" id="v-pills-qua-tab" data-bs-toggle="pill" data-bs-target="#v-pills-qua" type="button" role="tab" aria-controls="v-pills-qua" aria-selected="true">Quarta</button>
+            <button class="nav-link" id="v-pills-qui-tab" data-bs-toggle="pill" data-bs-target="#v-pills-qui" type="button" role="tab" aria-controls="v-pills-qui" aria-selected="true">Quinta</button>
+            <button class="nav-link" id="v-pills-sex-tab" data-bs-toggle="pill" data-bs-target="#v-pills-sex" type="button" role="tab" aria-controls="v-pills-sex" aria-selected="true">Sexta</button>
+            <button class="nav-link" id="v-pills-sab-tab" data-bs-toggle="pill" data-bs-target="#v-pills-sab" type="button" role="tab" aria-controls="v-pills-sab" aria-selected="true">Sábado</button>
+            <button class="nav-link" id="v-pills-dom-tab" data-bs-toggle="pill" data-bs-target="#v-pills-dom" type="button" role="tab" aria-controls="v-pills-dom" aria-selected="true">Domingo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>
